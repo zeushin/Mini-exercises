@@ -72,6 +72,8 @@ let position: Int = 34
 let row: Int
 let column: Int
 
+exercisesSolved += 1
+
 
 //8
 let dividend: Double = 52.5
@@ -79,9 +81,13 @@ let divisor: Double = 3.2
 let quotient = Int(dividend / divisor)
 let remainder: Double = dividend - divisor * Double(quotient)
 
+exercisesSolved += 1
+
 //9
 let degrees: Double = 360
 let radians = (degrees * M_PI) / 180
+
+exercisesSolved += 1
 
 
 
