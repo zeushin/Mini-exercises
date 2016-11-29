@@ -140,12 +140,94 @@ if pow(2, lg2) == Double(number) {
     print("is not a power of 2")
 }
 
+// Challenges 7
 
+for var idx in 0...10 {
+    print(pow(2, idx))
+}
 
+// Challenges 8
 
+let n = 7
+var n_2 = 1
+var n_1 = 1
+var fibonacci = 0
+for var idx in 1...n {
+    if idx == 0 {
+        fibonacci = 1
+    } else if idx == 1 {
+        fibonacci = 1
+    } else {
+        fibonacci = n_2 + n_1
+    }
+    n_2 = n_1
+    n_1 = fibonacci
+}
+print("Fibonacci: \(fibonacci)")
 
+// Challenges 9
 
+let facN = 5
+var factorial = 1
+for var idx in 1...facN {
+    factorial *= idx
+}
+print("Factorial: \(factorial)")
 
+// Challenges 10
 
+var countNum2 = 0
+var countNum3 = 0
+var countNum4 = 0
+var countNum5 = 0
+var countNum6 = 0
+var countNum7 = 0
+var countNum8 = 0
+var countNum9 = 0
+var countNum10 = 0
+var countNum11 = 0
+var countNum12 = 0
+var counting = 0
 
+for i in 1...6 {
+    for j in 1...6 {
+        let sum = i + j
+        if sum == 2 {
+            countNum2 += 1
+        } else if sum == 3 {
+            countNum3 += 1
+        } else if sum == 4 {
+            countNum4 += 1
+        } else if sum == 5 {
+            countNum5 += 1
+        } else if sum == 6 {
+            countNum6 += 1
+        } else if sum == 7 {
+            countNum7 += 1
+        } else if sum == 8 {
+            countNum8 += 1
+        } else if sum == 9 {
+            countNum9 += 1
+        } else if sum == 10 {
+            countNum10 += 1
+        } else if sum == 11 {
+            countNum11 += 1
+        } else if sum == 12 {
+            countNum12 += 1
+        }
+        counting += 1
+    }
+}
+
+print("2's count: \(countNum2), odds: \(Double(countNum2) / Double(counting) * 100)%")
+print("3's count: \(countNum3), odds: \(Double(countNum3) / Double(counting) * 100)%")
+print("4's count: \(countNum4), odds: \(Double(countNum4) / Double(counting) * 100)%")
+print("5's count: \(countNum5), odds: \(Double(countNum5) / Double(counting) * 100)%")
+print("6's count: \(countNum6), odds: \(Double(countNum6) / Double(counting) * 100)%")
+print("7's count: \(countNum7), odds: \(Double(countNum7) / Double(counting) * 100)%")
+print("8's count: \(countNum8), odds: \(Double(countNum8) / Double(counting) * 100)%")
+print("9's count: \(countNum9), odds: \(Double(countNum9) / Double(counting) * 100)%")
+print("10's count: \(countNum10), odds: \(Double(countNum10) / Double(counting) * 100)%")
+print("11's count: \(countNum11), odds: \(Double(countNum11) / Double(counting) * 100)%")
+print("12's count: \(countNum12), odds: \(Double(countNum12) / Double(counting) * 100)%")
 
