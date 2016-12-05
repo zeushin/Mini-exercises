@@ -98,6 +98,62 @@ if current < 64 {
 let month = "november"
 let year = 2016
 
+if (month == "january" || month == "march" || month == "may" || month == "july" || month == "agust" || month == "october" || month == "december") {
+    print("31일")
+} else if (month == "april" || month == "june" || month == "september" || month == "november") {
+    print("30일")
+} else if (month == "february") {
+    if (year % 4 == 0 && year % 100 != 0 && year % 400 == 0) {
+        print("29일")
+    } else {
+        print("28일")
+    }
+}
+
+//6
+let number: Double = 10
+let log = log2(number)
+
+if log ==  Double(Int(log)) {
+    print("2의 거듭 제곱")
+} else {
+    print("2의 거듭 제곱 아님")
+}
+
+//7
+for number in 1...10 {
+    print(pow(2,number))
+}
+
+//8
+var n = 1
+var n_1 = 2
+var n_2 = 0
+
+while n_2 < 25 {
+    n_2 = n + n_1
+    n = n_1
+    n_1 = n_2
+}
+
+print("\(n_2)")
+
+
+//9
+var num = 5
+var m = 0
+var factorial = 1
+
+while m < num {
+    m += 1
+    factorial *= m
+}
+
+print ("\(num)의 팩토리얼은 \(factorial)")
+
+//10
+
+
 
 
 
